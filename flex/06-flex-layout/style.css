@@ -26,13 +26,11 @@ input {
   margin-bottom: 16px;
 }
 
-body {
-  padding: 20px;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
+  padding: 20px;
 }
 
 .left-links, .right-links {
@@ -45,12 +43,25 @@ body {
 
 a {
   text-decoration: none;
+  color: gray;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-
-/* .footer {
+.footer {
+  margin-top: 430px;
+  padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-} */
+  background-color: #eeeeee;
+}
+
+button {
+  padding: 12px;
+}
