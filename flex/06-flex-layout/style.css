@@ -26,19 +26,31 @@ input {
   margin-bottom: 16px;
 }
 
-.header {
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  align-self: center;
+}
+
+.header, .footer {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
   padding: 20px;
 }
 
 .left-links, .right-links {
   display: flex;
-  list-style: none;
-  gap: 8px;
-  margin: 0;
+  gap: 12px;
+}
+
+ul {
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 a {
@@ -46,22 +58,19 @@ a {
   color: gray;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.footer {
+  background: #eeeeee;
 }
 
-.footer {
-  margin-top: 430px;
-  padding: 16px;
+.buttons, .input {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  background-color: #eeeeee;
+  justify-content: center;
+}
+
+.buttons {
+  gap: 8px;
 }
 
 button {
-  padding: 12px;
+  padding: 8px;
 }
